@@ -1,0 +1,9 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://localhost:3000/articles">Wikinimous</a>
+  <a class="my-2 my-sm-0"><%= link_to "Create new Article", articles_new_path %></a>
+</nav>
+
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+<%= link_to "Edit article", edit_article_path(@article) %>
+<p><%= link_to "Back to all articles", articles_path %></p>

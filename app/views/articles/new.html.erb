@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://localhost:3000/articles">Wikinimous</a>
+</nav>
+
+<%= form_for(@article) do |a| %>
+  <%= a.label :title %>
+  <%= a.text_field :title %>
+  <%= a.label :content %>
+  <%= a.text_field :content %>
+  <%= a.submit %>
+<% end %>
